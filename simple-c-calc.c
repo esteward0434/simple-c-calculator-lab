@@ -10,9 +10,15 @@ int main () {
 
 // Letting the user input the numbers they would like to calculate
 
- printf ("Enter the operator you would like to use: ('+')");
- scanf ("%c", &operator);
+ printf ("Enter the operator you would like to use: ('+')\n");
+ scanf (" %c", &operator);
 
 // Allows user to pick their operation
+
+ if(operator == '+') {
+    result = num1 + num2;
+    printf ("Result = %.2f\n", result);
+ }
+
  return 0; 
 }
