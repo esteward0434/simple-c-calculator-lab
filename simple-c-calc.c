@@ -42,8 +42,14 @@ int main () {
         printf ("Result = %.2f\n", result);
     } else {
         printf ("Divide By Zero ERROR\n");
+    } 
+//Division function added
+
+} else {
+        printf ("Not a valid operation\n");
+        return 0;
     }
- }
+ 
 
  //Division function added
 
