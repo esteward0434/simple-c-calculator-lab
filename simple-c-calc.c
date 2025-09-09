@@ -4,9 +4,13 @@ int main () {
  float num1, num2, result;
  char operator;
  printf ("Enter your first number\n");
- scanf ("%f", &num1);
+    if (scanf ("%f", &num1) != 1) {
+        printf ("Not a valid number input! ERROR!");
+    }
  printf ("Enter your second number\n");
- scanf ("%f", &num2);
+    if (scanf ("%f", &num2) != 1) {
+        printf ("Not a valid number input! ERROR!");g
+    }
 
 // Letting the user input the numbers they would like to calculate
 
@@ -49,10 +53,6 @@ int main () {
         printf ("Not a valid operation\n");
         return 0;
     }
- 
-
- //Division function added
-
 
  return 0; 
 }
