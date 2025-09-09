@@ -10,7 +10,7 @@ int main () {
 
 // Letting the user input the numbers they would like to calculate
 
- printf ("Enter the operator you would like to use: ('+', '-')\n");
+ printf ("Enter the operator you would like to use: ('+', '-', '*')\n");
  scanf (" %c", &operator);
 
 // Allows user to pick their operation
@@ -29,5 +29,10 @@ int main () {
 
  //Subtraction function added ^
 
+ else if (operator == '*') {
+    result = num1 * num2;
+    printf ("Result = %.2f\n", result);
+ }
+ //Multiplication function added ^
  return 0; 
 }
