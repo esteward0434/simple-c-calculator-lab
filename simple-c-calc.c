@@ -10,7 +10,7 @@ int main () {
 
 // Letting the user input the numbers they would like to calculate
 
- printf ("Enter the operator you would like to use: ('+', '-', '*')\n");
+ printf ("Enter the operator you would like to use: ('+', '-', '*', '/')\n");
  scanf (" %c", &operator);
 
 // Allows user to pick their operation
@@ -33,6 +33,20 @@ int main () {
     result = num1 * num2;
     printf ("Result = %.2f\n", result);
  }
+
  //Multiplication function added ^
+
+ else if (operator == '/'){
+    if (num2 != 0) {
+        result = num1 / num2;
+        printf ("Result = %.2f\n", result);
+    } else {
+        printf ("Divide By Zero ERROR\n");
+    }
+ }
+
+ //Division function added
+
+
  return 0; 
 }
